@@ -8,7 +8,7 @@ The model is trained using historical Amazon stock data and predicts future clos
 
 ---
 
-## Objectives
+Objectives
 - To analyze historical Amazon stock price data
 - To preprocess and normalize time-series data
 - To build and train an LSTM-based deep learning model
@@ -17,12 +17,12 @@ The model is trained using historical Amazon stock data and predicts future clos
 
 ---
 
-## Dataset Description
+Dataset Description
 Dataset Name: Amazon Stock Price Dataset  
 Source: Kaggle  
 File Name: Amazon.csv  
 
-### Features
+Features
 - Date: Trading date
 - Open: Opening price of the stock
 - High: Highest price of the day
@@ -34,7 +34,7 @@ Only the Close price is used for prediction as it represents the final trading v
 
 ---
 
-## Technologies and Libraries Used
+Technologies and Libraries Used
 - Python
 - NumPy
 - Pandas
@@ -45,7 +45,7 @@ Only the Close price is used for prediction as it represents the final trading v
 
 ---
 
-## Methodology
+ Methodology
 1. Load and inspect the dataset
 2. Convert the Date column to datetime format
 3. Sort the data in chronological order
@@ -61,7 +61,7 @@ Only the Close price is used for prediction as it represents the final trading v
 
 ---
 
-## Model Architecture
+Model Architecture
 - LSTM Layer with 50 units (return sequences enabled)
 - LSTM Layer with 50 units
 - Dense output layer with 1 unit
@@ -71,24 +71,23 @@ Loss Function: Mean Squared Error
 
 ---
 
-## Evaluation Metric
+Evaluation Metric
 Root Mean Squared Error (RMSE)
 
 RMSE measures the average prediction error. Lower RMSE values indicate better model accuracy.
 
 ---
 
-## Results
+Results
 The LSTM model successfully captures temporal dependencies in Amazon stock prices and produces predictions that closely follow actual closing price trends.
 
 ---
-
-## Conclusion
+ Conclusion
 This project demonstrates that LSTM neural networks are effective for stock price prediction. By learning from historical closing prices, the model identifies patterns and trends in financial time-series data.
 
 ---
 
-## Future Enhancements
+Future Enhancements
 - Predict stock prices for the next 30 days
 - Include multiple features such as Open, High, Low, and Volume
 - Compare performance with Linear Regression and ARIMA models
@@ -97,7 +96,7 @@ This project demonstrates that LSTM neural networks are effective for stock pric
 
 ---
 
-## How to Run the Project
+How to Run the Project
 1. Upload Amazon.csv to Google Colab
 2. Install required Python libraries
 3. Run all notebook cells sequentially
